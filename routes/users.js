@@ -36,4 +36,10 @@ module.exports = (app) => {
             (err) ? app.utils.error.send(err, req, res) : res.status(200).json(user);
         });
     })
+
+    routeId.put((req,res) => {
+        db.update({_id:req.params.id}, req.body, err => {
+            (err) ? app.utils.error.send(err, req, res) : res.status(200).json({...req.params, ...req.body});
+        })
+    })
 };
