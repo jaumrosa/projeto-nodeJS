@@ -4,26 +4,33 @@ API REST desenvolvida com **Node.js** utilizando **Express**, **NeDB** como banc
 
 ## Tecnologias utilizadas
 
-* [Node.js](https://nodejs.org/?utm_source=chatgpt.com)
-* [Express](https://expressjs.com/?utm_source=chatgpt.com)
-* [NeDB (@seald-io/nedb)](https://www.npmjs.com/package/@seald-io/nedb?utm_source=chatgpt.com)
-* [Body Parser](https://www.npmjs.com/package/body-parser?utm_source=chatgpt.com)
-* [Consign](https://www.npmjs.com/package/consign?utm_source=chatgpt.com)
-* [Express Validator](https://express-validator.github.io/docs/?utm_source=chatgpt.com)
-* [Postman](https://www.postman.com/?utm_source=chatgpt.com)
+* [Node.js](https://nodejs.org/)
+* [Express](https://expressjs.com/)
+* [NeDB (@seald-io/nedb)](https://www.npmjs.com/package/@seald-io/nedb )
+* [Body Parser](https://www.npmjs.com/package/body-parser)
+* [Consign](https://www.npmjs.com/package/consign)
+* [Express Validator](https://express-validator.github.io/docs/)
+* [Postman](https://www.postman.com/)
 
 ---
 
 # Estrutura do projeto
 
 ```bash
-restful/
+projeto-nodeJS/
+├── node_modules/
 ├── routes/
+│   ├── index.js
+│   └── users.js
 ├── utils/
-├── users.db
-├── index.js
+│   ├── error.js
+│   └── validator.js
+├── .gitignore
+├── app.js
+├── package-lock.json
 ├── package.json
-└── README.md
+├── README.md
+└── users.db
 ```
 
 ---
@@ -119,7 +126,7 @@ app.listen(3000, "127.0.0.1", () => {
 
 # Testando a API com Postman
 
-Os endpoints podem ser testados utilizando o [Postman](https://www.postman.com/?utm_source=chatgpt.com).
+Os endpoints podem ser testados utilizando o [Postman](https://www.postman.com/).
 
 Após iniciar o servidor:
 
@@ -256,4 +263,4 @@ Você pode importar esta collection diretamente no Postman:
 
 **João Pedro Rosa**
 
-* GitHub: [@jaumrosa](https://github.com/jaumrosa?utm_source=chatgpt.com)
+* GitHub: [@jaumrosa](https://github.com/jaumrosa)
