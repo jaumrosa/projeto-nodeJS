@@ -42,4 +42,10 @@ module.exports = (app) => {
             (err) ? app.utils.error.send(err, req, res) : res.status(200).json({...req.params, ...req.body});
         })
     })
+
+    routeId.delete((req,res) => {
+        db.remove({_id:req.params.id}, {}, err => {
+            (err) ? app.utils.error.send(err, req, res) : res.status(200).json(req.body);
+        });
+    })
 };
